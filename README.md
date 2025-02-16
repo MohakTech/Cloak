@@ -1,34 +1,84 @@
-# Cloak - Decentralized & Encrypted Chat Platform  
+# Turborepo starter
 
-Cloak is a **secure, decentralized chat application** designed to ensure **privacy, anonymity, and security** in online communication. It leverages **blockchain authentication** and **end-to-end encryption**, combined with a **Tor-like routing system**, to provide a censorship-resistant and private messaging experience.  
+This Turborepo starter is maintained by the Turborepo core team.
 
-## 🚀 Features  
+## Using this example
 
-- **Blockchain-Based Authentication**: Users authenticate using their **Ethereum wallet** (MetaMask).  
-- **End-to-End Encryption**: Messages are encrypted to prevent eavesdropping.  
-- **Decentralized Communication**: WebSockets handle real-time messaging over a distributed network.  
-- **Tor-Like Routing**: Messages are relayed through multiple nodes to enhance privacy.  
-- **Censorship-Resistant**: No central authority can shut down or control communication.  
+Run the following command:
 
-## 🔧 Tech Stack  
+```sh
+npx create-turbo@latest
+```
 
-- **Frontend**: React (Next.js)  
-- **Backend**: Bun / Node.js with WebSockets  
-- **Blockchain**: Ethereum smart contracts (Solidity)  
-- **Encryption**: AES / RSA hybrid encryption for secure messaging  
-- **Routing**: Custom Tor-like node relays  
+## What's inside?
 
-## 📌 Roadmap  
+This Turborepo includes the following packages/apps:
 
-- [ ] Implement secure WebSocket messaging  
-- [ ] Deploy Ethereum smart contracts for authentication  
-- [ ] Build a peer-to-peer node relay system  
-- [ ] Develop a polished UI for seamless UX  
+### Apps and Packages
 
-## 💡 Why Cloak?  
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-Traditional messaging apps collect user data, track activity, and can be censored. **Cloak** ensures absolute privacy by combining **decentralization, encryption, and anonymous routing**, making it a truly **private and secure communication platform**.  
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
----
+### Utilities
 
-🚀 **Join the Movement** – Help build the future of **secure and anonymous messaging**!  
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm build
+```
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+```
+cd my-turborepo
+pnpm dev
+```
+
+### Remote Caching
+
+> [!TIP]
+> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+
+Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+
+```
+cd my-turborepo
+npx turbo login
+```
+
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+
+Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+
+```
+npx turbo link
+```
+
+## Useful Links
+
+Learn more about the power of Turborepo:
+
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
