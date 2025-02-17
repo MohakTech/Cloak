@@ -1,7 +1,7 @@
 # Cloak - Decentralized & Encrypted Chat Platform  
 
 Cloak is a **secure, decentralized chat application** designed to ensure **privacy, anonymity, and security** in online communication. It leverages **blockchain authentication** and **end-to-end encryption**, combined with a **Tor-like routing system**, to provide a censorship-resistant and private messaging experience.  
-Hello world
+
 ## 🚀 Features  
 
 - **Blockchain-Based Authentication**: Users authenticate using their **Ethereum wallet** (MetaMask).  
